@@ -37,7 +37,7 @@ return {
 					KnifeDamage = 3,
 					KnifeRate = 0.1,
 					DamageType = {
-						Knife = "Energy"
+						Knife = "Fire"
 					},
 					Abilities = {
 						[2] = {
@@ -251,8 +251,8 @@ return {
 		Camo = false,
 		Flying = false,
 		DamageType = {
-			Knife = "Normal",
-			Gun = "Normal"
+			Knife = "Sharp",
+			Gun = "Sharp"
 		},
 		PlacementLimit = 10
 	}
