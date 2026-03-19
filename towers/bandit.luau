@@ -254,6 +254,7 @@ return {
 			Knife = "Sharp",
 			Gun = "Sharp"
 		},
-		PlacementLimit = 10
+		PlacementLimit = 10,
+		HitboxSize = 0.75
 	}
 }
