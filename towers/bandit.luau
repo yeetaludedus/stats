@@ -7,6 +7,12 @@ return {
 					Cost = 200,
 					KnifeDamage = 1,
 					KnifeRate = 0.5,
+					Damages = {
+						[2] = 1,
+					},
+					Rates = {
+						[2] = 0.5,
+					},
 					Ranges = {
 						[1] = {
 							Name = "KnifeRange",
@@ -34,8 +40,12 @@ return {
 				[3] = {
 					Name = "Seething Blade",
 					Cost = 1000,
-					KnifeDamage = 3,
-					KnifeRate = 0.1,
+					Damages = {
+						[2] = 3
+					},
+					Rates = {
+						[2] = 0.1
+					},
 					DamageType = {
 						Knife = "Fire"
 					},
@@ -61,8 +71,10 @@ return {
 				[4] = {
 					Name = "Blazing Blade, Burning Bullets",
 					Cost = 4000,
-					KnifeDamage = 2,
-					GunDamage = 3,
+					Damages = {
+						[1] = 3,
+						[2] = 2
+					},
 					Abilities = {
 						[3] = {
 							Type = "Passive",
@@ -97,8 +109,10 @@ return {
 				[5] = {
 					Name = "From The Core of a Dying Star",
 					Cost = 10000,
-					KnifeDamage = 2,
-					GunDamage = 3,
+					Damages = {
+						[1] = 3,
+						[2] = 2
+					},
 					Overrides = {
 						Abilities = {
 							[2] = {
@@ -127,15 +141,23 @@ return {
 				[1] = {
 					Name = "Better Marksmanship",
 					Cost = 150,
-					GunDamage = 1,
-					GunRate = 0.2,
+					Damages = {
+						[1] = 1,
+					},
+					Rates = {
+						[1] = 0.2,
+					},
 					XP = 100
 				},
 				[2] = {
 					Name = ".45 ACP",
 					Cost = 650,
-					GunDamage = 4,
-					GunRate = -0.1,
+					Damages = {
+						[1] = 4,
+					},
+					Rates = {
+						[1] = -0.1,
+					},
 					XP = 450
 				},
 				[3] = {
@@ -160,9 +182,13 @@ return {
 				[4] = {
 					Name = "Horde Hunter",
 					Cost = 3500,
-					GunRate = 0.3,
-					KnifeRate = 0.3,
-					KnifeDamage = 3,
+					Rates = {
+						[1] = 0.3,
+						[2] = 0.3
+					},
+					Damages = {
+						[2] = 3
+					},
 					Overrides = {
 						Abilities = {
 							[1] = {
@@ -177,8 +203,10 @@ return {
 				[5] = {
 					Name = "The Deadly Desperado",
 					Cost = 6000,
-					GunDamage = 10,
-					KnifeDamage = 5,
+					Damages = {
+						[1] = 10,
+						[2] = 5
+					},
 					Overrides = {
 						Abilities = {
 							[1] = {
@@ -194,8 +222,10 @@ return {
 			Shared = {
 				Name = "Ambidextrous Annihilation",
 				Cost = 25000,
-				GunDamage = 10,
-				KnifeDamage = 10,
+				Damages = {
+					[1] = 10,
+					[2] = 10
+				},
 				Overrides = {
 					Abilities = {
 						[1] = {
@@ -230,10 +260,16 @@ return {
 	},
 	Base = {
 		Cost = 500,
-		KnifeDamage = 1,
-		GunDamage = 1,
 		GunRate = 1,
 		KnifeRate = 0.5,
+		Damages = {
+			[1] = 1,
+			[2] = 1,
+		},
+		Rates = {
+			[1] = 1,
+			[2] = 0.5
+		},
 		Ranges = {
 			[1] = {
 				Name = "GunRange",
@@ -251,10 +287,12 @@ return {
 		Camo = false,
 		Flying = false,
 		DamageType = {
-			Knife = "Sharp",
-			Gun = "Sharp"
+			[1] = "Sharp",
+			[2] = "Sharp"
 		},
 		PlacementLimit = 10,
-		HitboxSize = 0.75
+		HitboxSize = 0.75,
+		TargetMode = "Hitscan",
+		Weapons = 2
 	}
 }
