@@ -6,11 +6,11 @@ return {
 					Name = "Improved Slashing",
 					Cost = 200,
 					KnifeDamage = 1,
-					KnifeRate = 0.5,
+					KnifeCooldown = 0.5,
 					Damages = {
 						[2] = 1,
 					},
-					Rates = {
+					Cooldowns = {
 						[2] = 0.5,
 					},
 					Ranges = {
@@ -43,7 +43,7 @@ return {
 					Damages = {
 						[2] = 3
 					},
-					Rates = {
+					Cooldowns = {
 						[2] = 0.1
 					},
 					DamageType = {
@@ -144,7 +144,7 @@ return {
 					Damages = {
 						[1] = 1,
 					},
-					Rates = {
+					Cooldowns = {
 						[1] = 0.2,
 					},
 					XP = 100
@@ -155,7 +155,7 @@ return {
 					Damages = {
 						[1] = 4,
 					},
-					Rates = {
+					Cooldowns = {
 						[1] = -0.1,
 					},
 					XP = 450
@@ -182,7 +182,7 @@ return {
 				[4] = {
 					Name = "Horde Hunter",
 					Cost = 3500,
-					Rates = {
+					Cooldowns = {
 						[1] = 0.3,
 						[2] = 0.3
 					},
@@ -260,13 +260,11 @@ return {
 	},
 	Base = {
 		Cost = 500,
-		GunRate = 1,
-		KnifeRate = 0.5,
 		Damages = {
 			[1] = 1,
 			[2] = 1,
 		},
-		Rates = {
+		Cooldowns = {
 			[1] = 1,
 			[2] = 0.5
 		},
